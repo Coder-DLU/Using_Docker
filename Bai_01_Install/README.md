@@ -33,5 +33,10 @@ Có thể Xem các Image của docker tại đây: https://hub.docker.com/search
 
 ![Container](pull.PNG)
 
-- Muốn cài đặt một image với phiên bản mới nhất ta sử dụng câu lệnh: docker pull image:latest
+  - Muốn cài đặt một image với phiên bản mới nhất ta sử dụng câu lệnh: docker pull image:latest hoặc docker pull image
+  - Muốn xóa một image ta sử dụng câu lệnh: docker image rm image:Tag
+
+![Container](rm.PNG)
+
+
 
