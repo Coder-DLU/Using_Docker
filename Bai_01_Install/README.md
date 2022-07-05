@@ -57,6 +57,17 @@ Chúng ta chạy ubuntu với tài khoản root hostname là 19fe4676620d.
 
 ![Container](start.PNG)
 
+  - tắt container sử dụng:  docker stop CONTAINER ID hoặc  docker stop NAMES
+
+![Container](stop.PNG)
+
+  - Chạy container có host do chúng ta tạo ra: 
+
+![Container](host.PNG)
+![Container](host1.PNG)
+
+
+
 
 
 
