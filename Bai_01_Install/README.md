@@ -33,4 +33,5 @@ Có thể Xem các Image của docker tại đây: https://hub.docker.com/search
 
 ![Container](pull.PNG)
 
+- Muốn cài đặt một image với phiên bản mới nhất ta sử dụng câu lệnh: docker pull image:latest
 
