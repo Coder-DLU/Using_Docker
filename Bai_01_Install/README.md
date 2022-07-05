@@ -49,6 +49,17 @@ Chúng ta chạy ubuntu với tài khoản root hostname là 19fe4676620d.
 
 ![Container](info.PNG)
 
+  - Kiêm tra các các container đang chạy sử dụng docker ps và tất cả container đang có là docker ps -a
+
+![Container](ps.PNG)
+
+  - Chạy container sử dụng:  docker start CONTAINER ID hoặc  docker start NAMES
+
+![Container](start.PNG)
+
+
+
+
 
 
 
