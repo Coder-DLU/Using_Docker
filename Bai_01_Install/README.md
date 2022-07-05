@@ -25,4 +25,8 @@ Trong các Images nó chỉ đọc không thể sửa đổi. Khi Images đượ
 Chú thích: REPOSITORY là tên của image, TAG là phiên bản của image, IMAGE ID: mã của Image, CREATE: ngày tạo,SIZE: kích thước image
 
 Có thể Xem các Image của docker tại đây: https://hub.docker.com/search?q=image&type=image
+- Có thể tìm kiếm image trên Windows powerShell theo cú pháp: docker search keyword
+
+![Container](searchImage.PNG)
+
 
