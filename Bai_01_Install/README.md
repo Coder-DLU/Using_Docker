@@ -34,9 +34,21 @@ Có thể Xem các Image của docker tại đây: https://hub.docker.com/search
 ![Container](pull.PNG)
 
   - Muốn cài đặt một image với phiên bản mới nhất ta sử dụng câu lệnh: docker pull image:latest hoặc docker pull image
-  - Muốn xóa một image ta sử dụng câu lệnh: docker image rm image:Tag
+  - Muốn xóa một image ta sử dụng câu lệnh: docker image rm image:Tag hoặc docker image rm IMAGE ID
+    + IMAGE ID trong phần chạy docker images
 
 ![Container](rm.PNG)
+
+  - Muốn chạy một Image chúng ta sử dụng lệnh sau: docker run -it ubuntu:latest hoặc docker run -it IMAGE ID
+    + IMAGE ID trong phần chạy docker images
+
+![Container](run.PNG)
+ 
+Chúng ta chạy ubuntu với tài khoản root hostname là 19fe4676620d.
+- Chúng ta có thể kiêm tra thông tin của ubuntu này như sau:
+
+![Container](info.PNG)
+
 
 
 
