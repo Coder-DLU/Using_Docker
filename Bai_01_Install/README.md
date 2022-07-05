@@ -29,4 +29,8 @@ Có thể Xem các Image của docker tại đây: https://hub.docker.com/search
 
 ![Container](searchImage.PNG)
 
+  - Muốn cài đặt một image ta sử dụng câu lệnh: docker pull image:tag
+
+![Container](pull.PNG)
+
 
