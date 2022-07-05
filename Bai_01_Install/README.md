@@ -9,3 +9,20 @@
 
 ![Container](VMs_Docker.PNG)
 
+# 2: Lệnh sử dụng docker
+-  Image trong docker là những phần mềm được đóng gói và quản lý bởi docker.
+-  Ví Dụ:
+  + Images đóng gói hệ điều hành PHP
+  + Images đóng gói Hệ điều hành Ubuntu
+
+![Container](image_container.PNG)
+
+Trong các Images nó chỉ đọc không thể sửa đổi. Khi Images được docker khởi chạy thì phiên bản của Images được gọi là các container. Các container có thể ghi được dữ liệu vào trong đó
+  - Để kiểm tra xem docker có những images nào chúng ta sử dụng lệnh: docker images(Mở Windows powerShell)
+
+![Container](dockerImage.PNG)
+
+Chú thích: REPOSITORY là tên của image, TAG là phiên bản của image, IMAGE ID: mã của Image, CREATE: ngày tạo,SIZE: kích thước image
+
+Có thể Xem các Image của docker tại đây: https://hub.docker.com/search?q=image&type=image
+
