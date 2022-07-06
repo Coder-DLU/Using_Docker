@@ -1,5 +1,5 @@
-# Lệnh Docker exec, lưu container thành image với commit, xuất image ra file
-## 1:
+# 1:Lệnh Docker exec, lưu container thành image với commit, xuất image ra file
+## 1.1:
 
 ![Container](aa.PNG)
 
@@ -21,7 +21,8 @@
 -  Để sử dụng file image này chúng ta dùng lệnh: docker load -i myImage.tar
 -  Chúng ta có thể đặt tên Repository và tag cho Image bằng lệnh sau: 
     docker tag IMAGE ID Tên_Repository:Tag 
-# Cách chia sẻ dữ liệu từ máy host cho container và giữa các container với nhau.
+# 2: Cách chia sẻ dữ liệu từ máy host cho container và giữa các container với nhau.
+## 2.2: Cách chia sẻ dữ liệu từ máy host cho container
 - Bây giờ chúng ta tạo một folder Dulieu  chứa tập tin test.txt trong tập tin này chứa nội dung là xin chào.
 - Để container truy cập được dữ liệu này cũng như ghi được dữ liệu vào file này và sau đó chúng ta xóa container đi và thư mục này vẫn còn tồn tại trên máy host: 
    + Chúng ta tạo một container chứa trong images ubuntu-vim 
@@ -30,5 +31,27 @@
 ![Container](aa3.PNG)
 
 - có thể sử dụng lện vi tenFile: để xem nội dung trong file 
+## 2.2:  Cách chia sẻ dữ liệu giữa các container với nhau
+-   Chúng ta tạo một container mới có tên là C1 : 
+    +   docker run -it -v C:\Users\hung.ls\Desktop\DuLieu:/home/dulieu --name C1 4a9830b14021
+-   Truy cập /home/dulieu# ls để xem các file có trong C1
+-   Tạo thêm một container C2 có thể đọc và ghi file từ C1 :
+    +   docker run -it --name C2 --columes-from C1 ubuntu:latest
+
+
+![Container](aa4.PNG)
+
+-   Mở một Terminal mới chạy vô nhánh C1 
+
+![Container](aa5.PNG)
+
+-   Tạo một file mới tên testC2.txt trên nhánh C2
+
+![Container](aa6.PNG)
+
+-   Chạy lệnh ls trên nhánh C1 : /home/dulieu# ls và xem kết quả.
+
+![Container](aa7.PNG)
+
 
  
