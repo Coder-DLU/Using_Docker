@@ -1,4 +1,7 @@
 # 1: Cài đặt, tạo và chạy PHP, phiên bản có PHP-FPM bằng Docker
+
+![Container](aa.PNG)
+
 -  Kéo Image Php về và cài đặt network:
 
 ![Container](aa1.PNG)
