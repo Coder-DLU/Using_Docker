@@ -29,3 +29,5 @@
 
 - Kiểm tra phiên bản php: php -version
 # 2: Cài đặt, chạy Apache HTTPD bằng Docker
+-    Khi máy chủ apache httpd chạy thì nó sẽ nạp file cấu hình ở đường dẫn user/local/apache2/conf/httpd.conf
+-    Cài đặt httpd: docker pull httpd
