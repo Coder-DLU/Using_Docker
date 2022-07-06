@@ -22,6 +22,5 @@
 
 ![Container](aa3.PNG)
 
-
 - Kiểm tra phiên bản php: php -version
 # 2: Cài đặt, chạy Apache HTTPD bằng Docker
