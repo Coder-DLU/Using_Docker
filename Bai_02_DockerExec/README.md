@@ -10,3 +10,10 @@
 
 
 ![Container](aa1.PNG)
+
+- tiến hành commit:
+
+
+![Container](aa2.PNG)
+
+
