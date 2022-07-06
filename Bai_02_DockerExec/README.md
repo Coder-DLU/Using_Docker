@@ -53,5 +53,15 @@
 
 ![Container](aa7.PNG)
 
-
+## 3:  tạo và quản lý ổ đĩa docker volume
+-   Xem danh sách các ổ đĩa: docker volume ls
+-   Tạo mới một ổ đĩa: docker volume create Tên_ổ_Đĩa
+-   Xem thông tin ổ đĩa: docker volume inspect Tên_ổ_Đĩa
  
+![Container](aa8.PNG)
+
+-   Bây giờ chúng ta muốn gán ổ đĩa cho một container đễ container build dữ liệu cố định trong đó:
+    + docker run -it --mount source=DiSk,target= Path_Container_ImageID
+![Container](aa9.PNG)
+
+-   Bây giờ chúng ta có thể lưu dữ liệu mà không sợ mất đi khi chúng ta xóa container.
