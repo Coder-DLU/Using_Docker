@@ -16,8 +16,10 @@
 - Vào c-php: docker exec -it c-php bash
 - Vào thư mục cd /home/mycode/
 - Vào thư mục myCode vào www Tạo file test.php với nội dung sau: 
+```Dockerfile
 <?php
     phpinfo();
+```
 - Vào lại chạy  php test.php
 
 ![Container](aa3.PNG)
