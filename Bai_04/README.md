@@ -105,4 +105,27 @@ docker run --network www-net --name c-httpd -h httpd -p 9999:80 -p 443:443 -v D:
 
 -   Server API được gọi qua FPM/FastCGI.
 # 3: Cài đặt, chạy MySQL bằng Docker
+-    Khi chạy và cài các container chúng ta có thể thiết lập các biến môi trường cho container đó thông qua tham số là -a.
+-   tạo hai biến và gán giá trị cho nó : docker run -it -e Bien1=value1 -e bien2=value2 busybox
+-   Xuất giá trị của biến ra: # echo $tenbien
+
+![Container](b1.PNG)
+
+ -  Chạy lệnh code để mở vysualcode lên 
+ 
+ ```Dockerfile
+MSQL 8.0
+- port: 3304
+- file config: /etc/mysql/my.cnf
+              [mysqld]
+              default-authentication-plugin=mysql_native_password
+
+-   root: MYSQL_ROOT_PASSWORD
+-   databases: /var/lib/mysql
+```
+
+![Container](b1.PNG)
+
+-   Chạy 
+
 
