@@ -48,7 +48,7 @@
 
 -   Tất cả các máy chủ http mà chúng ta tạo ra  nó sẽ chạy file PHP thông qua Proxy tức là khi chúng ta truy vấn tới các file có phần mở rộng là php thi apache sẽ yêu cầu server chạy SPM thi hành file PHP đó.
 -   Để sử dụng được Proxy cho Apache chúng ta phải nạp các module Proxy như 
-    +   mod_proxy_connect.so
+    +   mod_proxy_connect.so và mod_proxy.so
 
 ![Container](aa5.PNG)
 
