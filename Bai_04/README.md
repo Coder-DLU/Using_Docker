@@ -29,5 +29,12 @@
 
 - Kiểm tra phiên bản php: php -version
 # 2: Cài đặt, chạy Apache HTTPD bằng Docker
--    Khi máy chủ apache httpd chạy thì nó sẽ nạp file cấu hình ở đường dẫn user/local/apache2/conf/httpd.conf
--    Cài đặt httpd: docker pull httpd
+-   Khi máy chủ apache httpd chạy thì nó sẽ nạp file cấu hình ở đường dẫn user/local/apache2/conf/httpd.conf
+-   Cài đặt httpd: docker pull httpd
+-   lấy file hrrpd.conf lấy file này ra máy host.
+    +   Chạy xong xóa luôn: --rm
+    +   Coppy  httpd.conf từ /usr/local/apache2/conf/httpd.conf vào thư mục /home/mycode/:
+        cp /usr/local/apache2/conf/httpd.conf /home/mycode/
+
+![Container](aa3.PNG)
+
