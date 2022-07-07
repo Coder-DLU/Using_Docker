@@ -45,3 +45,42 @@
 ![Container](aa4.PNG)
 
 -   Kiểm tra bên trong thư mục D:\Project/mycode/ có thêm file httpd.conf
+
+-   Tất cả các máy chủ http mà chúng ta tạo ra  nó sẽ chạy file PHP thông qua Proxy tức là khi chúng ta truy vấn tới các file có phần mở rộng là php thi apache sẽ yêu cầu server chạy SPM thi hành file PHP đó.
+-   Để sử dụng được Proxy cho Apache chúng ta phải nạp các module Proxy như 
+    +   mod_proxy_connect.so
+
+![Container](aa5.PNG)
+
+    +   mod_proxy_fcgi.so
+    
+![Container](aa6.PNG)
+
+    +   Thiết lập PHP handler yêu cầu apache gọi chạy php thông qua Proxy: AddHandler "proxy:fcgi://c-php:9000" .php
+-   Thiết lập thư mục làm việc mặc định của php
+
+![Container](aa7.PNG)
+
+-   Vào file test.php ở máy host
+```Dockerfile
+<?php
+    echo "Apache httpd";
+    phpinfo();
+```
+-   Vào file index.html ở máy host
+```Dockerfile
+<?php
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is website runing on container</h1>
+</body>
+</html>
+```
+-   File httpd.conf đã sữa trong kho chứa này của git.
