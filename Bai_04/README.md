@@ -35,6 +35,13 @@
     +   Chạy xong xóa luôn: --rm
     +   Coppy  httpd.conf từ /usr/local/apache2/conf/httpd.conf vào thư mục /home/mycode/:
         cp /usr/local/apache2/conf/httpd.conf /home/mycode/
+-   Xem danh sách container : docker ps
+-   Cài đặt httpd của apache : docker pull httpd
+-   Xem các Image hiện có : docker images
+-   Chạy  docker run --rm -v D:\Project/mycode/:/home/mycode/ httpd cp /usr/local/apache2/conf/httpd.conf /home/mycode/
+-   Chạy code D:\Project/mycode/httpd.conf để mở file trên vysual code
 
-![Container](aa3.PNG)
 
+![Container](aa4.PNG)
+
+-   Kiểm tra bên trong thư mục D:\Project/mycode/ có thêm file httpd.conf
