@@ -86,4 +86,22 @@
 </body>
 </html>
 ```
--   File httpd.conf đã sữa trong kho chứa này của git.
+-   File httpd.conf đã sữa up trong kho chứa này của git.
+-   Xem các network hiện có:  docker network ls
+-   chạy lệnh trong dấu nháy:
+```Dockerfile
+docker run --network www-net --name c-httpd -h httpd -p 9999:80 -p 443:443 -v D:\Project/mycode/:/home/mycode/ -v           D:\Project/mycode/httpd.conf:/usr/local/apache2/conf/httpd.conf httpd
+```
+
+![Container](aa9.PNG)
+
+-   ra trình duyệt chạy theo cổng sau :
+
+![Container](aa10.PNG)
+
+-   ra trình duyệt chạy theo cổng sau xem php đã hoạt động chưa :
+
+![Container](aa10.PNG)
+
+-   Server API được gọi qua FPM/FastCGI.
+
