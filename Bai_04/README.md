@@ -101,7 +101,7 @@ docker run --network www-net --name c-httpd -h httpd -p 9999:80 -p 443:443 -v D:
 
 -   ra trình duyệt chạy theo cổng sau xem php đã hoạt động chưa :
 
-![Container](aa10.PNG)
+![Container](aa11.PNG)
 
 -   Server API được gọi qua FPM/FastCGI.
 
