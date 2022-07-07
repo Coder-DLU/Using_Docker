@@ -50,7 +50,7 @@
 -   Để sử dụng được Proxy cho Apache chúng ta phải nạp các module Proxy như 
     +   mod_proxy_connect.so và mod_proxy.so
 
-![Container](aa5.PNG)
+![Container](a5.PNG)
 
     +   mod_proxy_fcgi.so
     
