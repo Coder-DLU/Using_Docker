@@ -57,9 +57,12 @@
 ![Container](aa6.PNG)
 
     +   Thiết lập PHP handler yêu cầu apache gọi chạy php thông qua Proxy: AddHandler "proxy:fcgi://c-php:9000" .php
+    
+![Container](aa7.PNG)
+
 -   Thiết lập thư mục làm việc mặc định của php
 
-![Container](aa7.PNG)
+![Container](aa8.PNG)
 
 -   Vào file test.php ở máy host
 ```Dockerfile
